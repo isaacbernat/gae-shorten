@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <h1>Url shortener</h1>
+    <form action="/" method="post">
+      <div>URL to shorten: <input type="text" maxlength="200" name="url" /><input type="submit" value="Go!"></div>
+    </form>
+    <div>
+    {% if url %}
+      <p> original url: <a href='{{url}}'>{{url}}</a></p>
+      <p> shortened url: <a href='http://shorten.countcert.com/{{key}}'>http://shorten.countcert.com/{{key}}</a></p>
+      {% if url.__len__() < (29 + key.__len__()) %}
+        <p> <del>saved</del> <ins>extra</ins> chars : <b> {{(29 + key.__len__()) - url.__len__()}} </b> !</p>
+      {% else %}
+        <p> saved chars: <b> {{url.__len__() - (29 + key.__len__())}} </b> </p>
+      {% endif %}
+    {% elif error %}
+      <p> An error ocurred: <b>{{error}}</b> </p>
+    {% endif %}
+    </div>
+  </body>
+</html>
