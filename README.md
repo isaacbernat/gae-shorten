@@ -2,12 +2,12 @@
 This is a simple URL shortener built as a programming test in 2012. It is done in Python and it uses Google App Engine. It may not necessarily be the way I would solve the assignment today, but I want to keep it faithful to the original.
 
 ## Instructions
-### Problem description
+### Problem description
 People are frequently posting URLs using services that limit the length of a message, or do for other reasons, such as preventing a URL spanning multiple lines from being split up and word-wrapped by email software, want to shorten lengthy URLs (and http://lol.ca/ts is so much easier to post to Twitter than http://www.laughing-out-loud.com/FelisSilvestrisCatus.aspx).
 
 Your task is to build a user-facing web service that takes a URL and provides a shorter URL, when possible. When resolved, that URL should redirect the user to the original URL.
 
-### Requirements
+### Requirements
 * Your solution should be written in Python
 * The service should have a user-facing web site (but the graphical design won't matter)
 * When given a long URL, the service should shorten it and return the shortened URL
