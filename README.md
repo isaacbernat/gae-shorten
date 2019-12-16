@@ -1,5 +1,5 @@
 # shorten
-This is a simple URL shortener built as a programming test in 2012. It is done in Python and it uses Google App Engine. It may not necessarily be the way I would solve the assignment today, but I want to keep it faithful to the original.
+A simple URL shortener built as a programming assignment in mid 2012. It's just 100 lines of Python and it uses Google App Engine. Check [the samples in my cv repository](https://github.com/isaacbernat/cv/tree/master/samples) for other code assignments.
 
 ## Instructions
 ### Problem description

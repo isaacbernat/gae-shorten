@@ -44,7 +44,7 @@ class TestMainPageAuxFunctions(unittest.TestCase):
     def setUp(self):
         self.testbed = testbed.Testbed()
         self.testbed.activate()
-        self.testbed.setup_env(app_id="wrappshorten")
+        self.testbed.setup_env(app_id="shorten")
         self.testbed.init_datastore_v3_stub()
         self.testbed.init_memcache_stub()
         self.MainPage = shorten.MainPage()
